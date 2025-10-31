@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI blog generator</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style>
+      @-webkit-keyframes rotate {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @-webkit-keyframes rotate {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      .load {
+        width: 100px;
+        height: 100px;
+        margin: 110px auto 0;
+        border: solid 10px rgb(42, 42, 246);
+        border-radius: 50%;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        -webkit-transition: all 0.5s ease;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-100 font-sans antialised">
+    <!--Navbar-->
+    <nav class="bg-blue-800 p-4 text-white flex justify-between">
+      <div>
+        <h1 class="text-2xl font-bold">IA Generatrice de blogs</h1>
+      </div>
+      <div>
+        <a href="#" class="text-white hover:underlined">Déconnexion</a>
+      </div>
+    </nav>
+
+    <!-- Partie principale -->
+    <div class="flex-grow container mx-auto mt-10 px-4 sm:px-0">
+      <div
+        class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 flex flex"
+      >
+        <!-- Section Introduction -->
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold mb-4">
+            Bienvenu sur notre plateforme de génération de blogs par IA !
+          </h2>
+          <p class="text-gray-700">
+            Notre plateforme utilise la puissance de l'intelligence artificielle
+            pour vous aider à créer des articles de blog captivants et bien
+            rédigés en quelques secondes. Entre le lien ci-dessous pour
+            commencer à générer votre premier article de blog
+          </p>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Section Lien YouTube -->
+
+      <div>
+        <h2 class="text-xl mb-4 font-semibold">
+          Entrez le lien de la video Youtube
+        </h2>
+        <div class="flex space-x-4">
+          <input
+            id="youtubeLink"
+            type="url"
+            placeholder="Collez le lien Youtube"
+            class="flex-grow p-2 border border-blue-400 rounded-l-md"
+          />
+          <button
+            id="generateBlogButton"
+            class="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors"
+          >
+            Générer l'article
+          </button>
+        </div>
+      </div>
+
+      <!-- Section pour le cercle de loading -->
+      <div style="display: none" id="loadingCricle" class="load"></div>
+
+      <!-- Le contenu généré de l'article de blog apparaîtra ici -->
+      <section
+        class="mt-10 flex-grow max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 flex flex"
+      >
+        <h2 class="text-xl mb-4 font-semibold">Article de blog généré</h2>
+        <div id="blogContent" class="mt-2 text-gray-700 space-y-4"></div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="bg-blue-800 text-white text-center p-4 mt-10">
+        &copy; 2025 IA Generatrice de blogs. Tous droits réservés.
+      </div>
+    </footer>
+
+    <script></script>
+  </body>
+</html>
