@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="bg-gray-100 font-sans antialised">
+    <nav class="bg-blue-800 p-4 text-white flex justify-between">
+      <div>
+        <h1 class="text-2xl font-bold">IA Generatrice de blogs</h1>
+      </div>
+      <div>
+        <a href="#" class="text-white hover:underlined">Connexion</a>
+        <a href="#" class="text-white hover:underlined">S'inscire</a>
+      </div>
+    </nav>
+
+    <br />
+
+    <!-- Partie principale -->
+
+    <div class="flex items-center justify-center h-screen">
+      <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-center">Inscrivez-vous</h2>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label
+              for="username"
+              class="block text-sm font-medium text-gray-700"
+              >Nom d'utilisateur</label
+            >
+            <input
+              type="username"
+              id="username"
+              name="username"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Entrez votre nom d'utilisateur"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Entrez votre email"
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block text-sm font-medium text-gray-700"
+              >Mot de passe</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Entrez votre mot de passe"
+            />
+          </div>
+          <div>
+            <label
+              for="reapeatPassword"
+              class="block text-sm font-medium text-gray-700"
+              >Répétez votre mot de passe</label
+            >
+            <input
+              type="password"
+              id="reapeatPassword"
+              name="reapeatPassword"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Entrez à nouveau votre Mot de passe"
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Se connecter
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
